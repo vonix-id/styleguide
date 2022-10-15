@@ -318,7 +318,7 @@
     </module>
     <module name="JavadocStyle" />
     <module name="JavadocType">
-      <property name="authorFormat" value="\S" />
+      <property name="authorFormat" value="^\b.+" />
       <!-- avoid errors on tag '@noinspection' -->
       <property name="allowUnknownTags" value="true" />
       <property name="severity" value="warning" />
