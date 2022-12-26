@@ -1055,7 +1055,6 @@ ij_html_text_wrap = normal
 indent_size = 2
 tab_width = 2
 ij_continuation_indent_size = 4
-ij_http request_call_parameters_wrap = normal
 
 [{*.jsf,*.jsp,*.jspf,*.tag,*.tagf,*.xjsp}]
 indent_size = 2
