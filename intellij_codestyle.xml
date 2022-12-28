@@ -3,7 +3,12 @@
   <option name="FORMATTER_TAGS_ENABLED" value="true" />
   <option name="ENABLE_SECOND_REFORMAT" value="true" />
   <option name="SOFT_MARGINS" value="100" />
+  <CssCodeStyleSettings>
+    <option name="HEX_COLOR_LOWER_CASE" value="true" />
+  </CssCodeStyleSettings>
   <HTMLCodeStyleSettings>
+    <option name="HTML_ATTRIBUTE_WRAP" value="2" />
+    <option name="HTML_ALIGN_TEXT" value="true" />
     <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
   </HTMLCodeStyleSettings>
   <JavaCodeStyleSettings>
@@ -51,6 +56,11 @@
     <option name="XML_SPACE_INSIDE_EMPTY_TAG" value="true" />
   </XML>
   <codeStyleSettings language="CSS">
+    <indentOptions>
+      <option name="INDENT_SIZE" value="2" />
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="TAB_SIZE" value="2" />
+    </indentOptions>
     <arrangement>
       <rules>
         <section>
@@ -1077,6 +1087,11 @@
       <option name="TAB_SIZE" value="2" />
     </indentOptions>
   </codeStyleSettings>
+  <codeStyleSettings language="HTTP Request">
+    <indentOptions>
+      <option name="INDENT_SIZE" value="2" />
+    </indentOptions>
+  </codeStyleSettings>
   <codeStyleSettings language="JAVA">
     <option name="RIGHT_MARGIN" value="100" />
     <option name="KEEP_BLANK_LINES_BETWEEN_PACKAGE_DECLARATION_AND_HEADER" value="1" />
@@ -1155,6 +1170,12 @@
       <option name="TAB_SIZE" value="2" />
     </indentOptions>
   </codeStyleSettings>
+  <codeStyleSettings language="LESS">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="TAB_SIZE" value="2" />
+    </indentOptions>
+  </codeStyleSettings>
   <codeStyleSettings language="Rust">
     <indentOptions>
       <option name="INDENT_SIZE" value="2" />
@@ -1162,7 +1183,16 @@
       <option name="TAB_SIZE" value="2" />
     </indentOptions>
   </codeStyleSettings>
+  <codeStyleSettings language="SASS">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="TAB_SIZE" value="2" />
+    </indentOptions>
+  </codeStyleSettings>
   <codeStyleSettings language="SCSS">
+    <indentOptions>
+      <option name="TAB_SIZE" value="2" />
+    </indentOptions>
     <arrangement>
       <rules>
         <section>
