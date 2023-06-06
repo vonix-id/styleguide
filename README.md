@@ -1,5 +1,8 @@
 # Overview
 
+![open-source](https://github.com/vonix-id/styleguide/assets/627874/5ad65cb6-c5f4-4d31-9812-c0642c1257da)
+![makes-people-smile](https://github.com/vonix-id/styleguide/assets/627874/6180488a-16a6-4626-905e-071f16bef8ba)
+
 Style guides for Vonix projects.
 
 ## Contributing
