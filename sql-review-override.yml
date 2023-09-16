@@ -156,6 +156,7 @@ ruleList:
     level: WARNING
     payload:
       list:
+        - id
         - created_at
         - creator_id
         - updated_at
