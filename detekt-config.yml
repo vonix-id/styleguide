@@ -179,6 +179,7 @@ complexity:
     ignoreDefaultParameters: true
     ignoreDataClasses: true
     ignoreAnnotatedParameter:
+      - "org.springframework.web.bind.annotation.PathVariable"
       - "org.springframework.web.bind.annotation.RequestParam"
   MethodOverloading:
     active: true
