@@ -1066,6 +1066,9 @@
   <codeStyleSettings language="Dart">
     <option name="RIGHT_MARGIN" value="100" />
   </codeStyleSettings>
+  <codeStyleSettings language="EditorConfig">
+    <option name="SPACE_AFTER_COMMA" value="false" />
+  </codeStyleSettings>
   <codeStyleSettings language="GSP">
     <indentOptions>
       <option name="INDENT_SIZE" value="2" />
@@ -1076,6 +1079,18 @@
   <codeStyleSettings language="Groovy">
     <indentOptions>
       <option name="INDENT_SIZE" value="2" />
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="TAB_SIZE" value="2" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="HCL">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="TAB_SIZE" value="2" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="HCL-Terraform">
+    <indentOptions>
       <option name="CONTINUATION_INDENT_SIZE" value="4" />
       <option name="TAB_SIZE" value="2" />
     </indentOptions>
@@ -2204,6 +2219,12 @@
       <option name="INDENT_SIZE" value="2" />
       <option name="CONTINUATION_INDENT_SIZE" value="4" />
       <option name="TAB_SIZE" value="2" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="csv">
+    <indentOptions>
+      <option name="TAB_SIZE" value="2" />
+      <option name="USE_TAB_CHARACTER" value="false" />
     </indentOptions>
   </codeStyleSettings>
   <codeStyleSettings language="go">
