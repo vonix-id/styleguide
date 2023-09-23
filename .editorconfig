@@ -1174,6 +1174,9 @@ ij_kotlin_wrap_expression_body_functions = 1
 ij_kotlin_wrap_first_method_in_call_chain = false
 
 [{*.markdown,*.md}]
+indent_size = 2
+tab_width = 2
+ij_continuation_indent_size = 4
 ij_markdown_force_one_space_after_blockquote_symbol = true
 ij_markdown_force_one_space_after_header_symbol = true
 ij_markdown_force_one_space_after_list_bullet = true
@@ -1282,9 +1285,6 @@ ij_python_use_continuation_indent_for_arguments = false
 ij_python_use_continuation_indent_for_collection_and_comprehensions = false
 ij_python_use_continuation_indent_for_parameters = true
 ij_python_wrap_long_lines = false
-
-[{*.qute.htm,*.qute.html,*.qute.json,*.qute.txt,*.qute.yaml,*.qute.yml}]
-ij_qute_keep_indents_on_empty_lines = false
 
 [{*.tf,*.tfvars}]
 indent_size = 2
