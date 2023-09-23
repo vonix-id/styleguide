@@ -41,7 +41,7 @@ console-reports:
     - 'NotificationReport'
     - 'FindingsReport'
     - 'FileBasedFindingsReport'
-  #  - 'LiteFindingsReport'
+    # - 'LiteFindingsReport'
 
 output-reports:
   active: true
@@ -49,8 +49,8 @@ output-reports:
     # - 'TxtOutputReport'
     - 'XmlOutputReport'
     - 'HtmlOutputReport'
-  # - 'MdOutputReport'
-  # - 'SarifOutputReport'
+    # - 'MdOutputReport'
+    # - 'SarifOutputReport'
 
 comments:
   active: true
