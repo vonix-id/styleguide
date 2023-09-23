@@ -17,5 +17,5 @@ The following list of programming languages (ordered by preferences) are officia
 |------------|-------------------------------------------------------|-------------|-------------------------------------------------------|
 | 1          | [Kotlin](https://kotlinlang.org/)                     | Compiled    | Long Term Support Java Virtual Machine (e.g. Java 21) |
 | 2          | [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) | Compiled    | Long Term Support .NET (e.g. .NET 6)                  |
-| 3          | [Python](https://www.python.org/)                     | Interpreted | Long Term Support (e.g. Python 3)                     |
-| 4          | [TypeScript](https://www.typescriptlang.org/)         | Compiled    | Long Term Support Node.js (e.g. Node.js 18)           |
+| 3          | [TypeScript](https://www.typescriptlang.org/)         | Compiled    | Long Term Support Node.js (e.g. Node.js 18)           |
+| 4          | [Python](https://www.python.org/)                     | Interpreted | Long Term Support (e.g. Python 3)                     |
