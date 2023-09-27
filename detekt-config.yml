@@ -861,7 +861,7 @@ style:
       - 'trimMargin'
   UnderscoresInNumericLiterals:
     active: true
-    acceptableLength: 4
+    acceptableLength: 5
     allowNonStandardGrouping: false
   UnnecessaryAbstractClass:
     active: true
