@@ -1,6 +1,7 @@
 # Rules intended for PostgreSQL
 # This file is generated on https://www.bytebase.com/sql-review-guide#bb.sql-review.prod
-# You can use it with the SQL Review Action https://github.com/marketplace/actions/sql-review
+# This file is used by the SQL Review Action (`review-sql.yml`)
+
 template: bb.sql-review.prod
 ruleList:
   # Doc: https://www.bytebase.com/docs/sql-review/review-rules#engine.mysql.use-innodb
@@ -138,8 +139,10 @@ ruleList:
   # Doc: https://www.bytebase.com/docs/sql-review/review-rules#naming.index.fk
   # issue: v1.0.0 action unable to retrieve 'referenced_column' value
   # workaround: change regex rule from 'referenced_column' to 'referencing_column'
+  # issue: RegEx maxLength cannot check more than 63 chars, changing field value has no effect.
+  # workaround: set level to WARNING
   - type: naming.index.fk
-    level: ERROR
+    level: WARNING
     payload:
       format: ^$|^fk_{{referencing_table}}_{{referencing_column}}_{{referenced_table}}_{{referencing_column}}$
       maxLength: 63
