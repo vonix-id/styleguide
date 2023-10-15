@@ -69,7 +69,7 @@ comments:
     endOfSentenceFormat: '([.?!][ \t\n\r\f<])|([.?!:]$)'
   KDocReferencesNonPublicProperty:
     active: true
-    excludes:
+    excludes: &test-files
       - '**/test/**'
       - '**/androidTest/**'
       - '**/commonTest/**'
@@ -78,6 +78,7 @@ comments:
       - '**/androidInstrumentedTest/**'
       - '**/jsTest/**'
       - '**/iosTest/**'
+      - '**/*.kts'
   OutdatedDocumentation:
     active: true
     matchTypeParameters: true
@@ -85,15 +86,7 @@ comments:
     allowParamOnConstructorProperties: false
   UndocumentedPublicClass:
     active: true
-    excludes:
-      - '**/test/**'
-      - '**/androidTest/**'
-      - '**/commonTest/**'
-      - '**/jvmTest/**'
-      - '**/androidUnitTest/**'
-      - '**/androidInstrumentedTest/**'
-      - '**/jsTest/**'
-      - '**/iosTest/**'
+    excludes: *test-files
     searchInNestedClass: true
     searchInInnerClass: true
     searchInInnerObject: true
@@ -101,27 +94,11 @@ comments:
     searchInProtectedClass: false
   UndocumentedPublicFunction:
     active: true
-    excludes:
-      - '**/test/**'
-      - '**/androidTest/**'
-      - '**/commonTest/**'
-      - '**/jvmTest/**'
-      - '**/androidUnitTest/**'
-      - '**/androidInstrumentedTest/**'
-      - '**/jsTest/**'
-      - '**/iosTest/**'
+    excludes: *test-files
     searchProtectedFunction: false
   UndocumentedPublicProperty:
     active: false
-    excludes:
-      - '**/test/**'
-      - '**/androidTest/**'
-      - '**/commonTest/**'
-      - '**/jvmTest/**'
-      - '**/androidUnitTest/**'
-      - '**/androidInstrumentedTest/**'
-      - '**/jsTest/**'
-      - '**/iosTest/**'
+    excludes: *test-files
     searchProtectedProperty: false
 
 complexity:
@@ -160,15 +137,7 @@ complexity:
   LargeClass:
     active: true
     threshold: 600
-    excludes:
-      - '**/test/**'
-      - '**/androidTest/**'
-      - '**/commonTest/**'
-      - '**/jvmTest/**'
-      - '**/androidUnitTest/**'
-      - '**/androidInstrumentedTest/**'
-      - '**/jsTest/**'
-      - '**/iosTest/**'
+    excludes: *test-files
   LongMethod:
     active: true
     threshold: 80
@@ -204,30 +173,14 @@ complexity:
     active: true
   StringLiteralDuplication:
     active: true
-    excludes:
-      - '**/test/**'
-      - '**/androidTest/**'
-      - '**/commonTest/**'
-      - '**/jvmTest/**'
-      - '**/androidUnitTest/**'
-      - '**/androidInstrumentedTest/**'
-      - '**/jsTest/**'
-      - '**/iosTest/**'
+    excludes: *test-files
     threshold: 3
     ignoreAnnotation: true
     excludeStringsWithLessThan5Characters: true
     ignoreStringsRegex: '$^'
   TooManyFunctions:
     active: true
-    excludes:
-      - '**/test/**'
-      - '**/androidTest/**'
-      - '**/commonTest/**'
-      - '**/jvmTest/**'
-      - '**/androidUnitTest/**'
-      - '**/androidInstrumentedTest/**'
-      - '**/jsTest/**'
-      - '**/iosTest/**'
+    excludes: *test-files
     thresholdInFiles: 50
     thresholdInClasses: 50
     thresholdInInterfaces: 11
@@ -304,30 +257,14 @@ exceptions:
       - 'toString'
   InstanceOfCheckForException:
     active: true
-    excludes:
-      - '**/test/**'
-      - '**/androidTest/**'
-      - '**/commonTest/**'
-      - '**/jvmTest/**'
-      - '**/androidUnitTest/**'
-      - '**/androidInstrumentedTest/**'
-      - '**/jsTest/**'
-      - '**/iosTest/**'
+    excludes: *test-files
   NotImplementedDeclaration:
     active: false
   ObjectExtendsThrowable:
     active: true
   PrintStackTrace:
     active: true
-    excludes:
-      - '**/test/**'
-      - '**/androidTest/**'
-      - '**/commonTest/**'
-      - '**/jvmTest/**'
-      - '**/androidUnitTest/**'
-      - '**/androidInstrumentedTest/**'
-      - '**/jsTest/**'
-      - '**/iosTest/**'
+    excludes: *test-files
   RethrowCaughtException:
     active: true
   ReturnFromFinally:
@@ -347,15 +284,7 @@ exceptions:
     active: true
   ThrowingExceptionsWithoutMessageOrCause:
     active: true
-    excludes:
-      - '**/test/**'
-      - '**/androidTest/**'
-      - '**/commonTest/**'
-      - '**/jvmTest/**'
-      - '**/androidUnitTest/**'
-      - '**/androidInstrumentedTest/**'
-      - '**/jsTest/**'
-      - '**/iosTest/**'
+    excludes: *test-files
     exceptions:
       - 'ArrayIndexOutOfBoundsException'
       - 'Exception'
@@ -370,15 +299,7 @@ exceptions:
     active: true
   TooGenericExceptionCaught:
     active: true
-    excludes:
-      - '**/test/**'
-      - '**/androidTest/**'
-      - '**/commonTest/**'
-      - '**/jvmTest/**'
-      - '**/androidUnitTest/**'
-      - '**/androidInstrumentedTest/**'
-      - '**/jsTest/**'
-      - '**/iosTest/**'
+    excludes: *test-files
     exceptionNames:
       - 'ArrayIndexOutOfBoundsException'
       - 'Error'
@@ -425,15 +346,7 @@ naming:
     minimumFunctionNameLength: 3
   FunctionNaming:
     active: true
-    excludes:
-      - '**/test/**'
-      - '**/androidTest/**'
-      - '**/commonTest/**'
-      - '**/jvmTest/**'
-      - '**/androidUnitTest/**'
-      - '**/androidInstrumentedTest/**'
-      - '**/jsTest/**'
-      - '**/iosTest/**'
+    excludes: *test-files
     functionPattern: '[a-z][a-zA-Z0-9]*'
     excludeClassPattern: '$^'
   FunctionParameterNaming:
@@ -492,15 +405,7 @@ performance:
     threshold: 3
   ForEachOnRange:
     active: true
-    excludes:
-      - '**/test/**'
-      - '**/androidTest/**'
-      - '**/commonTest/**'
-      - '**/jvmTest/**'
-      - '**/androidUnitTest/**'
-      - '**/androidInstrumentedTest/**'
-      - '**/jsTest/**'
-      - '**/iosTest/**'
+    excludes: *test-files
   SpreadOperator:
     active: true
     excludes:
@@ -585,15 +490,7 @@ potential-bugs:
     active: true
   LateinitUsage:
     active: true
-    excludes:
-      - '**/test/**'
-      - '**/androidTest/**'
-      - '**/commonTest/**'
-      - '**/jvmTest/**'
-      - '**/androidUnitTest/**'
-      - '**/androidInstrumentedTest/**'
-      - '**/jsTest/**'
-      - '**/iosTest/**'
+    excludes: *test-files
     ignoreOnClassesPattern: ''
   MapGetWithNotNullAssertionOperator:
     active: true
@@ -621,15 +518,7 @@ potential-bugs:
     active: true
   UnsafeCallOnNullableType:
     active: true
-    excludes:
-      - '**/test/**'
-      - '**/androidTest/**'
-      - '**/commonTest/**'
-      - '**/jvmTest/**'
-      - '**/androidUnitTest/**'
-      - '**/androidInstrumentedTest/**'
-      - '**/jsTest/**'
-      - '**/iosTest/**'
+    excludes: *test-files
   UnsafeCast:
     active: true
   UnusedUnaryOperator:
@@ -656,6 +545,7 @@ style:
   CascadingCallWrapping:
     active: true
     includeElvis: true
+    excludes: *test-files
   ClassOrdering:
     active: true
   CollapsibleIfStatements:
@@ -752,16 +642,7 @@ style:
     maxJumpCount: 1
   MagicNumber:
     active: true
-    excludes:
-      - '**/test/**'
-      - '**/androidTest/**'
-      - '**/commonTest/**'
-      - '**/jvmTest/**'
-      - '**/androidUnitTest/**'
-      - '**/androidInstrumentedTest/**'
-      - '**/jsTest/**'
-      - '**/iosTest/**'
-      - '**/*.kts'
+    excludes: *test-files
     ignoreNumbers:
       - "-1"
       - "0"
