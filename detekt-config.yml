@@ -614,6 +614,11 @@ style:
     active: true
     imports:
       - 'lombok.*'
+      - 'org.apache.commons.lang.NotImplementedException'
+      - 'org.apache.commons.lang3.NotImplementedException'
+      - 'org.apache.hc.core5.http.NotImplementedException'
+      - 'sun.reflect.generics.reflectiveObjects.NotImplementedException'
+      - 'jdk.jshell.spi.ExecutionControl.NotImplementedException'
     forbiddenPatterns: ''
   ForbiddenMethodCall:
     active: true
