@@ -150,6 +150,8 @@ complexity:
     ignoreAnnotatedParameter:
       - "org.springframework.web.bind.annotation.PathVariable"
       - "org.springframework.web.bind.annotation.RequestParam"
+    ignoreAnnotated:
+      - "jakarta.persistence.Entity"
   MethodOverloading:
     active: true
     threshold: 6
