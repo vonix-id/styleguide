@@ -173,6 +173,7 @@ complexity:
       - 'kotlin.also'
   ReplaceSafeCallChainWithRun:
     active: true
+    excludes: *test-files
   StringLiteralDuplication:
     active: true
     excludes: *test-files
@@ -627,6 +628,7 @@ style:
         value: 'kotlin.io.print'
       - reason: 'println does not allow you to configure the output stream. Use a logger instead.'
         value: 'kotlin.io.println'
+    excludes: *test-files
   ForbiddenSuppress:
     active: false
     rules: [ ]
@@ -823,7 +825,7 @@ style:
     active: true
   VarCouldBeVal:
     active: true
-    ignoreLateinitVar: false
+    ignoreLateinitVar: true
   WildcardImport:
     active: true
     excludeImports: [ ]
