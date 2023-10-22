@@ -411,16 +411,7 @@ performance:
     excludes: *test-files
   SpreadOperator:
     active: true
-    excludes:
-      - '**/*Application.kt'
-      - '**/test/**'
-      - '**/androidTest/**'
-      - '**/commonTest/**'
-      - '**/jvmTest/**'
-      - '**/androidUnitTest/**'
-      - '**/androidInstrumentedTest/**'
-      - '**/jsTest/**'
-      - '**/iosTest/**'
+    excludes: *test-files
   UnnecessaryPartOfBinaryExpression:
     active: true
   UnnecessaryTemporaryInstantiation:
