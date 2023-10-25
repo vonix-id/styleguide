@@ -608,7 +608,6 @@ style:
       - 'lombok.*'
       - '*.NotImplementedException'
       - 'org.junit.Assert*'
-      - 'org.junit.jupiter.api.Assertions*'
     forbiddenPatterns: ''
   ForbiddenMethodCall:
     active: true
