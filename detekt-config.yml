@@ -608,6 +608,7 @@ style:
       - 'lombok.*'
       - '*.NotImplementedException'
       - 'org.junit.Assert*'
+      - 'org.mockito.Mockito*'
     forbiddenPatterns: ''
   ForbiddenMethodCall:
     active: true
