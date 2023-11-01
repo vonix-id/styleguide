@@ -684,6 +684,8 @@ style:
     excludeImportStatements: true
     excludeCommentStatements: true
     excludeRawStrings: true
+    excludes:
+      - '**/build.gradle.kts'
   MayBeConst:
     active: true
   ModifierOrder:
