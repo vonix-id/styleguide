@@ -605,10 +605,20 @@ style:
   ForbiddenImport:
     active: true
     imports:
-      - 'lombok.*'
-      - '*.NotImplementedException'
-      - 'org.junit.Assert*'
-      - 'org.mockito.Mockito*'
+      - reason: "Use Kotlin's native data class instead."
+        value: "lombok.*"
+      - reason: "Use Kotlin's `NotImplementedError` (or `TODO`) instead."
+        value: "*.NotImplementedException"
+      - reason: "Use fluent library from `AssertJ` or Kotlin test instead."
+        value: "org.junit.Assert*"
+      - reason: "Use `org.mockito.kotlin.*` instead."
+        value: "org.mockito.Mockito*"
+      - reason: "Use `org.springframework.transaction.annotation.Transactional` instead."
+        value: "jakarta.transaction.Transactional"
+      - reason: "Use Kotlin's built-in string functions instead."
+        value: "org.apache.commons.lang.StringUtils"
+      - reason: "Use Kotlin's native built-in collection functions instead."
+        value: "java.util.stream.*"
     forbiddenPatterns: ''
   ForbiddenMethodCall:
     active: true
