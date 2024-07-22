@@ -619,6 +619,18 @@ style:
         value: "org.apache.commons.lang.StringUtils"
       - reason: "Use Kotlin's native built-in collection functions instead."
         value: "java.util.stream.*"
+      - reason: "Use JUnit 5 (or newer) equivalent instead."
+        value: "org.junit.Test"
+      - reason: "Use JUnit 5 (or newer) equivalent instead."
+        value: "org.junit.After"
+      - reason: "Use JUnit 5 (or newer) equivalent instead."
+        value: "org.junit.AfterClass"
+      - reason: "Use JUnit 5 (or newer) equivalent instead."
+        value: "org.junit.Before"
+      - reason: "Use JUnit 5 (or newer) equivalent instead."
+        value: "org.junit.BeforeClass"
+      - reason: "Use JUnit 5 (or newer) equivalent instead."
+        value: "org.junit.Ignore"
     forbiddenPatterns: ''
   ForbiddenMethodCall:
     active: true
