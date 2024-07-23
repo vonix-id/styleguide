@@ -617,8 +617,6 @@ style:
         value: "jakarta.transaction.Transactional"
       - reason: "Use Kotlin's built-in string functions instead."
         value: "org.apache.commons.lang.StringUtils"
-      - reason: "Use Kotlin's native built-in collection functions instead."
-        value: "java.util.stream.*"
       - reason: "Use JUnit 5 (or newer) equivalent instead."
         value: "org.junit.Test"
       - reason: "Use JUnit 5 (or newer) equivalent instead."
