@@ -1,0 +1,19 @@
+name: "✏️️ Todo"
+description: "Something that needs to be done."
+labels: [ "todo" ]
+type: "task"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!IMPORTANT]
+        > **Before you fill in this todo**...
+        > Please search [open/closed issues](../issues?q=is%3Aissue) before submitting, the issue might have been created.
+  - type: textarea
+    id: description
+    attributes:
+      label: "Describe the todo"
+      description: >
+        A clear and concise description of what needs to be done.
+    validations:
+      required: true
