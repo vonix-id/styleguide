@@ -8,7 +8,7 @@ body:
       value: |
         > [!IMPORTANT]
         > **Before you fill in this todo**...
-        > Please search [open/closed issues](../issues?q=is%3Aissue) before submitting, the issue might have been created.
+        > Please search [open/closed issues](issues?q=is%3Aissue) before submitting, the issue might have been created.
   - type: textarea
     id: description
     attributes:

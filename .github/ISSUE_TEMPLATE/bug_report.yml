@@ -8,7 +8,7 @@ body:
       value: |
         > [!IMPORTANT]
         > **Before you fill in this bug report**...
-        > Please search [open/closed issues](../issues?q=is%3Aissue) before submitting, the issue might be already known and fixed before.
+        > Please search [open/closed issues](issues?q=is%3Aissue) before submitting, the issue might be already known and fixed before.
   - type: input
     id: reporter
     attributes:
