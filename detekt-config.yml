@@ -713,7 +713,7 @@ style:
   MultilineLambdaItParameter:
     active: true
   MultilineRawStringIndentation:
-    active: true
+    active: false
     indentSize: 2
     trimmingMethods:
       - 'trimIndent'
