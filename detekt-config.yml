@@ -340,8 +340,8 @@ naming:
     active: true
     enumEntryPattern: '[A-Z][_a-zA-Z0-9]*'
   ForbiddenClassName:
-    active: false
-    forbiddenName: [ ]
+    active: true
+    forbiddenName: [ 'Impl' ]
   FunctionMaxLength:
     active: false
     maximumFunctionNameLength: 30
