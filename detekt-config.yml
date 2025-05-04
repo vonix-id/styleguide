@@ -1,4 +1,4 @@
-# Rules config for detekt v1.23.1
+# Rules config for detekt v1.23.8
 
 build:
   maxIssues: 0
@@ -92,6 +92,7 @@ comments:
     searchInInnerObject: true
     searchInInnerInterface: true
     searchInProtectedClass: false
+    ignoreDefaultCompanionObject: true
   UndocumentedPublicFunction:
     active: true
     excludes: *test-files
